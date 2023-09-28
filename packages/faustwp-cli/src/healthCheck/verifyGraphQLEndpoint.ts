@@ -31,7 +31,7 @@ export async function verifyGraphQLEndpoint() {
       throw new Error(`GraphQL request didn't include "json.data.__typename"`);
     }
 
-    debugLog(`Discoverd GraphQL endpoint at ${graphqlEndpoint}`);
+    debugLog(`Discovered GraphQL endpoint at ${graphqlEndpoint}`);
 
     return true;
   } catch (err) {
